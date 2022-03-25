@@ -78,6 +78,12 @@ const MintNFTsApp = () => {
     checkIfWalletIsConnected();
   }, []);
 
+  const openseaButtonCss = {
+    marginTop: '10px',
+    display: 'block',
+    color: 'white',
+  }
+
   return (
     <div className="header-container">
       <p className="header gradient-text">My NFT Collection</p>
@@ -89,6 +95,8 @@ const MintNFTsApp = () => {
       ) : (
         <MintNFTButton />
       )}
+
+      <a href={OPENSEA_LINK} style={openseaButtonCss} target="_blank">View complete Collection on OpenSea</a>
     </div>
   );
 };
