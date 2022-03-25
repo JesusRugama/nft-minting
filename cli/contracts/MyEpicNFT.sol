@@ -42,6 +42,8 @@ contract MyEpicNFT is ERC721URIStorage {
     ];
     string[] thirdWords = ["Fart", "Poop", "Diarrhea", "Shit", "Vomit"];
 
+    event NewEpicNFTMinted(address sender, uint256 tokenId);
+
     constructor() ERC721("SquareNFT", "SQUARE") {
         console.log("Nathaniel Farts!");
     }
@@ -140,5 +142,7 @@ contract MyEpicNFT is ERC721URIStorage {
             newItemId,
             msg.sender
         );
+
+        emit NewEpicNFTMinted(msg.sender, newItemId);
     }
 }
