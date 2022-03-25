@@ -1,3 +1,6 @@
+# Live site
+Visit the [Live site here](https://main.d2gbc84tdps66v.amplifyapp.com/)
+
 # buildspace Mint Your Own NFT Collection
 
 ### **Welcome 👋**
